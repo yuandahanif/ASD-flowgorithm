@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="yuan"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-03-10 02:24:45 PM"/>
+        <attribute name="created" value="eXVhbjtFWUpBRkpBOzIwMjEtMDMtMTA7MDI6MDg6MzAgUE07MjIxNw=="/>
+        <attribute name="edited" value="eXVhbjtFWUpBRkpBOzIwMjEtMDMtMTA7MDI6MjQ6NDUgUE07MjsyMzMw"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="bil" type="Integer" array="False" size=""/>
+            <input variable="bil"/>
+            <if expression="bil &gt;= 0">
+                <then>
+                    <if expression="bil = 0">
+                        <then>
+                            <output expression="&quot;bil sama dengan 0&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;bil adalah bilangan positif&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <output expression="&quot;bil adalah bilangan negatif&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

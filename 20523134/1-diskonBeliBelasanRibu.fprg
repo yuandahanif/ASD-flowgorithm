@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="zainu"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-03-08 10:05:20 AM"/>
+        <attribute name="created" value="emFpbnU7REVTS1RPUC1PTkVRUFNLOzIwMjEtMDMtMDg7MTA6MDI6NDUgQU07MjkzNg=="/>
+        <attribute name="edited" value="emFpbnU7REVTS1RPUC1PTkVRUFNLOzIwMjEtMDMtMDg7MTA6MDU6MjAgQU07MTszMDQw"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="total" type="Real" array="False" size=""/>
+            <input variable="total"/>
+            <if expression="total &gt; 10000">
+                <then>
+                    <assign variable="total" expression="total - 0.1*total"/>
+                </then>
+                <else/>
+            </if>
+            <output expression="total" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
