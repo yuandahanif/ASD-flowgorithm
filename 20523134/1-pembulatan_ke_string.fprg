@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Amal"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-03-17 07.21.40 PM"/>
+        <attribute name="created" value="QW1hbDtERVNLVE9QLThSNU1USTg7MjAyMS0wMy0xNzswNDoxODowOSBQTTsyNzI1"/>
+        <attribute name="edited" value="QW1hbDtERVNLVE9QLThSNU1USTg7MjAyMS0wMy0xNzswNDoyMzozMSBQTTsxOzI4MjQ="/>
+        <attribute name="edited" value="eXVhbjtERVNLVE9QLUdQS0JCUVY7MjAyMS0wMy0xNzswNy4yMS40MCBQTTsyOzI5MTI="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="angka" type="Integer" array="False" size=""/>
+            <input variable="angka"/>
+            <output expression="round(angka)" newline="True"/>
+        </body>
+    </function>
+    <function name="round" type="String" variable="str">
+        <parameters>
+            <parameter name="x" type="Integer" array="False"/>
+        </parameters>
+        <body>
+            <declare name="str" type="String" array="False" size=""/>
+            <if expression="x &lt; 1000">
+                <then>
+                    <if expression="x &lt; 100">
+                        <then>
+                            <if expression="x &lt; 10">
+                                <then>
+                                    <assign variable="str" expression="&quot;satuan&quot;"/>
+                                </then>
+                                <else>
+                                    <assign variable="str" expression="&quot;puluhan&quot;"/>
+                                </else>
+                            </if>
+                        </then>
+                        <else>
+                            <assign variable="str" expression="&quot;ratusan&quot;"/>
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <assign variable="str" expression="&quot;ribuan&quot;"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

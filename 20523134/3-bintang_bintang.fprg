@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Amal"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-03-17 04:39:08 PM"/>
+        <attribute name="created" value="QW1hbDtERVNLVE9QLThSNU1USTg7MjAyMS0wMy0xNzswNDoyMzozNyBQTTsyNzIy"/>
+        <attribute name="edited" value="QW1hbDtERVNLVE9QLThSNU1USTg7MjAyMS0wMy0xNzswNDozOTowOCBQTTsxOzI4MzU="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="masukanUser" type="String" array="False" size=""/>
+            <input variable="masukanUser"/>
+            <call expression="bintang(masukanUser)"/>
+        </body>
+    </function>
+    <function name="bintang" type="None" variable="keluaran">
+        <parameters>
+            <parameter name="masukan" type="String" array="False"/>
+        </parameters>
+        <body>
+            <declare name="output" type="String" array="False" size=""/>
+            <assign variable="output" expression="&quot;&quot;"/>
+            <declare name="i" type="Integer" array="False" size=""/>
+            <for variable="i" start="1" end="Len(masukan)" direction="inc" step="1">
+                <assign variable="output" expression="output &amp; &quot;*&quot;"/>
+            </for>
+            <output expression="masukan &amp; ToChar(13) &amp; output" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
